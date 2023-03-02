@@ -12,7 +12,7 @@
 
 .btn-primary {
   color: #333;
-  background-color: #EF6D6D; }
+  background-color: #ef6d6d; }
 
 .btn-light {
   color: #333;
@@ -25,13 +25,13 @@
 button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
-  background-color: #EF6D6D; }
+  background-color: #ef6d6d; }
 
 .bg-dark {
   background-color: #333; }
 
 .bg-primary {
-  background-color: #EF6D6D; }
+  background-color: #ef6d6d; }
 
 .bg-light {
   background-color: #f4f4f4; }
@@ -72,7 +72,7 @@ input[class^="btn-"]:hover {
 .border-bottom {
   height: 3px;
   width: 3rem;
-  background-color: #EF6D6D;
+  background-color: #ef6d6d;
   margin: 0 auto 1rem auto; }
 
 .lead {
@@ -121,7 +121,7 @@ img {
         .main-nav__items li a:hover {
           border-color: #ccc; }
         .main-nav__items li a.active {
-          border-color: #EF6D6D; }
+          border-color: #ef6d6d; }
 
 #header__home {
   background: url("../img/bg.jpeg") no-repeat center right/cover;
@@ -139,7 +139,7 @@ img {
 #header__inner {
   background: #333;
   height: 5.5rem;
-  border-bottom: 3px solid #EF6D6D; }
+  border-bottom: 3px solid #ef6d6d; }
 
 #home__a .skills {
   display: grid;
@@ -147,7 +147,7 @@ img {
   gap: 1rem;
   margin-bottom: 2.5rem; }
   #home__a .skills i {
-    color: #EF6D6D;
+    color: #ef6d6d;
     padding-bottom: 0.5rem; }
 
 #home__b .profile {
@@ -175,7 +175,7 @@ img {
     top: 0;
     right: 0;
     font-size: 25px;
-    background-color: #EF6D6D;
+    background-color: #ef6d6d;
     border-radius: 50%;
     line-height: 15px;
     padding: 1rem;
@@ -190,7 +190,7 @@ img {
     padding: 2rem;
     text-align: center; }
     #home__c .process__icon:hover {
-      background-color: #EF6D6D; }
+      background-color: #ef6d6d; }
       #home__c .process__icon:hover .process__step {
         background-color: #333; }
 
@@ -216,7 +216,7 @@ img {
     #about-b .progress div {
       height: 100%;
       text-align: center;
-      background-color: #EF6D6D; }
+      background-color: #ef6d6d; }
 
 #about-c .about-logos {
   display: grid;
@@ -259,4 +259,28 @@ img {
       padding: 0.6rem;
       transition: all 0.5s; }
       #main-footer .footer-content .social .fab:hover {
-        background-color: #EF6D6D; }
+        background-color: #ef6d6d; }
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  box-shadow: rgba(149, 154, 145, 0.2) 0px 8px 24px; }
+  .items .item {
+    position: relative;
+    background-color: #f4f4f4;
+    overflow: hidden; }
+    .items .item::after {
+      content: "";
+      position: absolute;
+      display: block;
+      background-color: rgba(139, 109, 129, 0.8);
+      opacity: 0.8;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: translateX(50%) translateY(90%) rotate(45deg);
+      transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    .items .item:hover::after {
+      transform: translateX(-200%) translateY(-200%) rotate(45deg) scale(3); }
