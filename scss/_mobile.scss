@@ -1,11 +1,166 @@
 // Desktop
 @media (max-width: 1024px) {
+  #header {
+    &__home {
+    }
+  }
 }
 
 // tables
 
 @media (max-width: 768px) {
+  #header {
+    &__home {
+      height: 30rem;
+
+      .header-content {
+        text-align: center;
+        padding-top: 7rem;
+
+        h1 {
+          font-size: 2.6rem;
+        }
+      }
+    }
+  }
+
+  .main-nav {
+    &__items {
+      font-size: small;
+    }
+  }
+
+  #home__a .skills,
+  #home__b .profile,
+  #home__c .process,
+  .items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #main-footer {
+    height: 7rem;
+
+    .footer-content {
+      flex-direction: column;
+      padding: 1rem;
+      height: 5rem;
+
+      .social {
+        padding-top: 1rem;
+      }
+    }
+  }
 }
 // phones
 @media (max-width: 480px) {
+  #header {
+    &__home {
+      height: 10rem;
+      border-bottom: 3px solid $primary-color;
+      background-position: 20% 30%;
+
+      .header-content {
+        display: none;
+
+        h1 {
+          font-size: 2.6rem;
+        }
+      }
+    }
+
+    &__inner {
+      height: 10rem;
+    }
+  }
+  .main-nav {
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      padding: 1rem;
+    }
+  }
+
+  #home__a .skills,
+  #home__b .profile,
+  #home__c .process,
+  .items,
+  #contact-b .contact-info {
+    grid-template-columns: 1fr;
+  }
+
+  #main-footer {
+    height: 7rem;
+
+    .footer-content {
+      flex-direction: column;
+      padding: 1rem;
+      height: 5rem;
+
+      .social {
+        padding-top: 1rem;
+      }
+    }
+  }
+
+  .lead {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    word-spacing: 1px;
+  }
+
+  #home {
+    &__a {
+      .skills div {
+        border-bottom: 1px $dark-color ridge;
+        padding-bottom: 1rem;
+
+        &:last-child {
+          border: none;
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+
+  #about {
+    &-a {
+      .info {
+        grid-template-columns: 1fr;
+      }
+    }
+    &-c {
+      .about-logos {
+        grid-template-columns: 1fr 1fr;
+        width: 65%;
+        margin-left: 4rem;
+      }
+    }
+  }
+  #contact {
+    &-a {
+      .form-fields {
+        grid-template-areas:
+          "name"
+          "email"
+          "subject"
+          "phone"
+          "message"
+          "button";
+      }
+    }
+    &-b {
+      div {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px ridge #ffffff;
+
+        &:last-child {
+          border: none;
+          padding-bottom: 0;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
 }
